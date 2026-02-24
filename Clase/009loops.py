@@ -1,27 +1,14 @@
-""" Los loops o bucles son estructuras que permiten repetir un bloque de codigo varias veces
-mientras se cumpla una condicion o mientras hayan elementos que rrecorrer. En Python, los loops mas comunes son 'for' y 'while'."""
-
-"""
-my_condition = 0
-
-while my_condition < 10:
- print(my_condition) # este es un bucle infinito
-
-"""
-# Ejemplo con 'while'
 my_condition = 0
 
 while my_condition < 10:
     print(my_condition)
-    my_condition += 2  # Incrementamos la condicion para evitar un bucle infinito de 2 en 2
+    my_condition += 2
 
-# en python se puede usar else con los bucles
 else:
     print("Mi condicion es mayor o igual que 10")
 
 print("La ejecucon continua")
 
-# Ejemplo uso de while seguido de if
 
 my_condition = 0
 
@@ -64,36 +51,33 @@ my_list = [35, 24, 62, 52, 12]
 for element in my_list:
     print(element)
 
-my_set = {"Jowell", "Otoya", 35}
+my_set = {"Zhen", "Yang", 25}
 for element in my_set:
     print(element)
 
-my_tuple = (35,1.70, "Jowell", "Otoya")
+my_tuple = (25,1.70, "Zhen", "Yang")
 for element in my_tuple:
     print(element)
 
 # Los diccionarios solo imprimen las claves no los valores
 
 my_dict = {
-    "Nombre": "Jowell",
-    "Apellido": "Otoya",
-    "Edad": 35
+    "Nombre": "Zhen",
+    "Apellido": "Yang",
+    "Edad": 25
 }
 
 for element in my_dict:
     print(element)
-
-# si se desea recorrer unicamente los valores del diccionario se usa el metodo .values()
 
 for element in my_dict.values():
     print(element)
 else:
     print("Se han recorrido todos los elementos del diccionario")
 
-# para recorrer tanto claves como valores se usa el metodo .items()
-
-for key, value in my_dict.items(): # para recorrer tanto claves como valores
-    print(f"Clave: {key} - Valor: {value}") # imprime clave y valor
+    
+for key, value in my_dict.items():
+    print(f"Clave: {key} - Valor: {value}")
 
 for element in my_dict:
     print(element)
